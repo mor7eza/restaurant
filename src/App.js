@@ -1,10 +1,15 @@
 import React from 'react'
+import { BrowserRouter as Router,Route } from 'react-router-dom';
+
+import './styles/app.scss'
+
+import Signin from './pages/Signin';
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+    <Router>
+      <Route exact path="/signin" component={Signin} />
+    </Router>
   );
 }
 
