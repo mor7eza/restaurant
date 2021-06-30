@@ -1,20 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-$color-primary:#FFCA40;
-$color-secondary:#C8161D;
-$color-dark:#000;
-$color-gray:#808080;
-$color-light-gray:#F8F8F7;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
 
-body{
-    font-family: 'Poppins', sans-serif;
-    color:$color-dark;
-    font-weight: 400;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+$color-primary: #ffca40;
+$color-secondary: #c8161d;
+$color-dark: #000;
+$color-gray: #808080;
+$color-light-gray: #f8f8f7;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $color-dark;
+  font-weight: 400;
 }
 
 //pages
-@import './pages/signin';
+@import "./pages/signin";
