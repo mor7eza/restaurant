@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 const Signin = () => {
   return (
@@ -11,8 +13,11 @@ const Signin = () => {
         <div className="form">
           <h2>Welcome Back!</h2>
           <p className="sub-header">Please sign in to continue</p>
-          <input type="text" placeholder="Sales ID number" />
-          <input type="password" placeholder="Password" />
+          <input className="user-input" type="text" placeholder="Sales ID number" />
+          <div className="password-input">
+            <input className="input" type="password" placeholder="Password" />
+            <FontAwesomeIcon className="icon" icon={faEyeSlash} />
+          </div>
           <button>Sign in</button>
           <p className="or">or</p>
           <div className="alternative-login">

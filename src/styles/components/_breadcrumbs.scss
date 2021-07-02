@@ -1,0 +1,24 @@
+.breadcrumb {
+  color: $color-gray;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+
+  & > * {
+    margin: 0 0.3rem;
+  }
+
+  button {
+    background-color: $color-light-gray;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    color: inherit;
+    border-radius: 4px;
+    margin-left: 0;
+  }
+
+  .active {
+    color: $color-dark;
+    font-weight: 500;
+  }
+}

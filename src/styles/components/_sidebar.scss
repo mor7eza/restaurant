@@ -1,0 +1,86 @@
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  min-width: 10rem;
+  max-width: 16rem;
+  background-color: white;
+  padding: 0rem 1rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(black, 0.1);
+  z-index: 999;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem 0;
+
+    .logo-alter {
+      color: $color-secondary;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    a {
+      width: 100%;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin: 0.1rem 0;
+      padding: 1rem;
+      transition: all 0.3s ease;
+      color: rgb(36, 36, 36);
+
+      &:hover {
+        background-color: $color-primary;
+        border-radius: 1rem;
+      }
+
+      .icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .profile {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.07);
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      width: 5rem;
+      margin-top: -2.5rem;
+    }
+
+    h3 {
+      margin: 0.5rem 0 0.3rem 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: $color-gray;
+    }
+
+    button {
+      margin-top: 1rem;
+      background-color: $color-light-gray;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .copyright {
+    margin: 1.5rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 0.7rem;
+    color: $color-gray;
+  }
+}

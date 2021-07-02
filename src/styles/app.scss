@@ -29,7 +29,23 @@ body {
   font-family: "Poppins", sans-serif;
   color: $color-dark;
   font-weight: 400;
+  background-color: $color-light-gray;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: white;
+  padding: 1.5rem 1rem 0 1rem;
 }
 
 //pages
 @import "./pages/signin";
+@import "./pages/category";
+
+//components
+@import "./components/sidebar";
+@import "./components/breadcrumbs";

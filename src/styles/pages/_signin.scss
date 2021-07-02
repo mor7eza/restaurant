@@ -7,7 +7,6 @@
     justify-content: center;
     width: 50%;
     height: 100vh;
-    background-color: $color-light-gray;
 
     img {
       width: 70%;
@@ -27,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 
     .form {
       width: 70%;
@@ -55,9 +55,21 @@
           font-size: 0.8rem;
         }
 
-        &:first-of-type {
+        &.user-input {
           margin-top: 1.5rem;
           margin-bottom: 0.5rem;
+        }
+      }
+      .password-input {
+        position: relative;
+
+        .icon {
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $color-gray;
+          cursor: pointer;
         }
       }
     }
@@ -94,6 +106,8 @@
         display: flex;
         align-content: center;
         justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s;
 
         &:first-of-type {
           margin-right: 0.5rem;
@@ -101,7 +115,12 @@
 
         img {
           width: 1.2rem;
+          height: 1.2rem;
           margin-right: 0.5rem;
+        }
+
+        &:hover {
+          background-color: $color-light-gray;
         }
       }
     }
@@ -121,6 +140,23 @@
 
       a {
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .signin-page {
+    .slider {
+      display: none;
+    }
+
+    .form-container {
+      width: 100%;
+      height: 100vh;
+
+      .form {
+        width: 90%;
       }
     }
   }
